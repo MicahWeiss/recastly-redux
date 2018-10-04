@@ -12,11 +12,14 @@ import rootReducer from './../reducers/main.js';
 //
 
 const defaultStore = {
-  currentVideo: '',
-  videos: [],
+  currentVideo: null,
+  videoList: [],
   searchText: ''
 };
 
 const store = createStore(rootReducer, defaultStore, applyMiddleware(thunk));
+console.log('defaultStore object in store.js', defaultStore);
+console.log('store get state in store.js', store.getState());
+
 
 export default store;

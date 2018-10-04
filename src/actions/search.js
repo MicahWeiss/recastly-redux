@@ -13,26 +13,5 @@ var handleVideoSearch = (q) => {
   }
 }
 
-// var handleVideoSearch = (q) => {
-//   const SEND_QUERY = 'SEND_QUERY';
-  
-  
-
-//   let options = {
-//     key: YOUTUBE_API_KEY,
-//     query: q
-//   }
-//   return searchYouTube(options, callback);
-// };
-
-// //from searchYouTube: callback(items)
-// var getSearchResults = (videos) => {
-//   const GET_VIDEOS_ARRAY = 'GET_VIDEOS_ARRAY';
-
-//   return {
-//     type: GET_VIDEOS_ARRAY,
-//     videos: videos
-//   }
-// }
 
 export default handleVideoSearch;
