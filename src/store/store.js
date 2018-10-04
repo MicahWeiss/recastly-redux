@@ -9,4 +9,14 @@ import rootReducer from './../reducers/main.js';
 //  videos
 //Search
 //  value
-//  
+//
+
+const defaultStore = {
+  currentVideo: '',
+  videos: [],
+  searchText: ''
+};
+
+const store = createStore(rootReducer, defaultStore, applyMiddleware(thunk));
+
+export default store;
