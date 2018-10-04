@@ -14,8 +14,8 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      videos: [],
-      currentVideo: null
+      videos: exampleVideoData,
+      currentVideo: exampleVideoData[0]
     };
   }
 
@@ -49,13 +49,10 @@ export default class App extends React.Component {
         <Nav handleSearchInputChange={this.getYouTubeVideos.bind(this)}/>
         <div className="row">
           <div className="col-md-7">
-            <VideoPlayerContainer video={this.state.currentVideo}/>
+            <VideoPlayerContainer />
           </div>
           <div className="col-md-5">
-            <VideoListContainer
-              handleVideoListEntryTitleClick={this.handleVideoListEntryTitleClick.bind(this)}
-              videos={this.state.videos}
-            />
+            <VideoListContainer />
           </div>
         </div>
       </div>
